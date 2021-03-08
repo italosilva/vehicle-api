@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  postgres_hex:
+    image: postgres:9.6.17-alpine
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_USER: vehicles-api
+      POSTGRES_PASSWORD: vehicles-api
+      POSTGRES_DB: vehicles
